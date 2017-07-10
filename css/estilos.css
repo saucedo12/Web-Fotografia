@@ -12,11 +12,12 @@ header{
 a{
 	color: white;
 }
-h1{
+ h1{
 	float: left;
 }
-nav{
+ nav{
 	height: 100%;
+	
 }
 li{
 	display: block;
@@ -30,5 +31,81 @@ li{
 	text-decoration: none;
 }
 body{
+	background: #02010a;
+	font-family: 'Dancing Script';
+}
+.contenedor{
+  display: flex; /*distribucion fluida*/
+  flex-flow: row wrap;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+
+.columna1{
+	background: #82c3a6;
+	width: 100%;
+}
+.columna2{
+	background: #d5c75f;
+	width:50%;
+	float: left;
+}
+.columna3{
+	background: #d5c75f;
+	width:50%;
+	float: right;
+}
+/*imagenes*/
+#imagenIndex1 img{
+	width:80%;
+}
+#imagenIndex2 img{
+	width:80%;
+	
+}
+#imagenIndex3 img{
+	width:80%;
+	
+}
+
+
+
+/*media queris*/
+@media screen and (max-width: 900px){
+	/*para moviles*/
+	.contenedor
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.columna1
+	{
+	width: 100%;
+	}
+	.columna2
+	{
+	width: 100%;
+	}
+	.columna3
+	{
+	width: 100%;
+	}
+
+	header
+	{
+	width:100%;
+	text-align: center;
+	}
+
+}
+
+@media screen and (min-width: 901px){
+	/*laptop y escritorio*/
+	.contenedor
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
 }
